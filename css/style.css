@@ -256,7 +256,10 @@ header .navbar ul li a:hover{
     width: 50%;
 }
 
-.service .box-container{
+
+
+/* .service .box-container{
+    
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -282,7 +285,41 @@ header .navbar ul li a:hover{
     color:#eee;
     font-size: 1.3rem;
     padding:.5rem 5rem;
+} */
+
+.service{
+    min-height: 100%;
 }
+
+.service .box-container{
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service .box-container .box {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    text-align: center;
+    width: 32rem;
+}
+
+.service .box-container .box i{
+    color:#fff;
+    font-size: 3rem;
+    padding:.1rem 0;
+}
+
+.service .box-container .box p{
+    color:#eee;
+    font-size: 1.2rem;
+    padding:.5rem .5rem;
+}
+
 
 .education .box-container{
     display: flex;
@@ -418,4 +455,14 @@ header .navbar ul li a:hover{
     margin:2rem 2.5rem;
     box-shadow: 0 0 0 .5rem rgba(255,255,255,.2),
                 0 1rem 2rem rgba(0,0,0,.4);
+}
+
+
+
+
+
+@media (max-width: 1020px) {
+    .education .box-container .box {
+    flex-direction: column;
+    }
 }
